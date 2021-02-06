@@ -5,6 +5,9 @@ import "../styles/Primarch.css";
 const Primarchs = () => {
     let primarchArray = [];
     const [primarchs, setPrimarchs] = useState(primarchArray);
+    const [score, setScore] = useState(0);
+    const [highScore, setHighScore] = useState(0);
+    const [myPicks, setMyPicks] = useState([]);
 
     const primarchFactory = (name, legion, sketch) => {
         return { name, legion, sketch }
@@ -112,8 +115,26 @@ const Primarchs = () => {
     }
     addPrimarchs();
 
-    function cardOnClick() {
-        console.log("OLA")
+
+    function playGame(e) {
+        let name = e.target.id;
+        let gameOver = false;
+     
+         myPicks.map( primarch => {
+            if(primarch == name) {
+                gameOver = true;
+                console.log("Game Over")
+                if(highScore < score) {setHighScore(score)}
+                setScore(0);
+                setMyPicks([]);
+                return;
+            }
+        }) 
+
+        if(gameOver) { return }
+        setMyPicks(myPicks.concat(name));
+        setScore( score + 1 );
+
         shuffle();
     }
 
@@ -128,14 +149,15 @@ const Primarchs = () => {
 
     return (
         <div className="primarch-container">
-        {console.log("render")}
-        {console.log(primarchs)}
+        <p> {score} </p>
+        <p> {highScore} </p>
         {primarchs.map( (primarch) => {
             return (
-                <div key={uniqid()} className="primarch-card" onClick={cardOnClick}>
-                <img className="sketch" key={uniqid()} src={primarch.sketch} />
-                <p key={uniqid()} className="name"> {primarch.name} </p>
-                <p key={uniqid()} className="legion"> {primarch.legion} </p>
+                <div key={uniqid()} className="primarch-card" id={primarch.name} onClick={playGame}>
+                <img className="sketch" key={uniqid()} id={primarch.name} src={primarch.sketch} />
+                <p key={uniqid()} id={primarch.name} className="name"> {primarch.name} </p>
+                <p key={uniqid()} id={primarch.name} className="legion"> {primarch.legion} </p>
+                {/* note for me: check the click event and its return values */}
             </div> 
             )
         })
