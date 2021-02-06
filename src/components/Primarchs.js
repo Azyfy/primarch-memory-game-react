@@ -112,13 +112,27 @@ const Primarchs = () => {
     }
     addPrimarchs();
 
+    function cardOnClick() {
+        console.log("OLA")
+        shuffle();
+    }
+
+    function shuffle() {
+        let cards = primarchs.slice();
+        for (let i=cards.length-1; i>0; i--) {
+            let j=Math.floor(Math.random() * (i+1));
+            [cards[i], cards[j]] = [cards[j], cards[i]];
+        }
+        setPrimarchs(cards);
+    }
+
     return (
         <div className="primarch-container">
         {console.log("render")}
         {console.log(primarchs)}
         {primarchs.map( (primarch) => {
             return (
-                <div key={uniqid()} className="primarch-card">
+                <div key={uniqid()} className="primarch-card" onClick={cardOnClick}>
                 <img className="sketch" key={uniqid()} src={primarch.sketch} />
                 <p key={uniqid()} className="name"> {primarch.name} </p>
                 <p key={uniqid()} className="legion"> {primarch.legion} </p>
