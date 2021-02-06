@@ -120,7 +120,7 @@ const Primarchs = () => {
         let name = e.target.id;
         let gameOver = false;
      
-         myPicks.map( primarch => {
+        myPicks.map( primarch => {
             if(primarch == name) {
                 gameOver = true;
                 console.log("Game Over")
@@ -130,6 +130,7 @@ const Primarchs = () => {
                 return;
             }
         }) 
+
 
         if(gameOver) { return }
         setMyPicks(myPicks.concat(name));
@@ -146,6 +147,17 @@ const Primarchs = () => {
         }
         setPrimarchs(cards);
     }
+
+    useEffect(() => {
+        if (score ==18 ) {
+            console.log("You win")
+
+            setHighScore(score);
+            setScore(0);
+            setMyPicks([]);
+
+        }
+    }, [score] );
 
     return (
         <div className="primarch-container">
