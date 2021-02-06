@@ -24,19 +24,19 @@ const Primarchs = () => {
                 switch (i) {
                     case 2:
                         name = "Fulgrim";
-                        legion = "III";
+                        legion = "Emperor`s Children";
                         break;
                     case 9:
                         name = "Ferrus Manus";
-                        legion = "X";
+                        legion = "Iron Hands";
                         break;
                     case 12:
                         name = "Mortarion";
-                        legion = "XIV";
+                        legion = "Death Guard";
                         break;
                     case 14:
                         name = "Horus Lupercal";
-                        legion = "XVI";
+                        legion = "Sons of Horus";
                         break;
                 }
                 sketch = `./images/Primarch${i}.png`;
@@ -45,7 +45,7 @@ const Primarchs = () => {
             }
         else if(i==13) {
             name = "Magnus the Red";
-            legion = "XV";
+            legion = "Thousand Sons";
             sketch = `./images/Primarch${i}.jpeg`;
             primarch = primarchFactory(name, legion, sketch);
             primarchArray.push(primarch);
@@ -55,55 +55,55 @@ const Primarchs = () => {
             switch (i) {
                 case 1:
                     name = "Lion El`Jonson";
-                    legion = "I";
+                    legion = "Dark Angels";
                     break;
                 case 3:
                     name = "Perturabo";
-                    legion = "IV";
+                    legion = "Iron Warriors";
                     break;
                 case 4:
                     name = "Jaghatai Khan";
-                    legion = "V";
+                    legion = "White Scars";
                     break;
                 case 5:
                     name = "Leman Russ";
-                    legion = "VI";
+                    legion = "Space Wolves";
                     break;
                 case 6:
                     name = "Rogal Dorn";
-                    legion = "VII";
+                    legion = "Imperial Fists";
                     break;
                 case 7:
                     name = "Konrad Kruze";
-                    legion = "VIII";
+                    legion = "Night Lords";
                     break;
                 case 8:
                     name = "Sanguinius";
-                    legion = "IX";
+                    legion = "Blood Angels";
                     break;
                 case 10:
                     name = "Angron";
-                    legion = "XII";
+                    legion = "World Eaters";
                     break;
                 case 11:
                     name = "Roboute Guilliman";
-                    legion = "XIII";
+                    legion = "Ultramarines";
                     break;
                 case 15:
                     name = "Lorgar";
-                    legion = "XVII";
+                    legion = "Word Bearers";
                     break;
                 case 16:
                     name = "Vulcan";
-                    legion = "XVIII";
+                    legion = "Salamanders";
                     break;
                 case 17:
                     name = "Corax";
-                    legion = "XIX";
+                    legion = "Raven Guard";
                     break;
                 case 18:
                     name = "Alpharius Omegon";
-                    legion = "XX";
+                    legion = "Alpha Legion";
                     break;
             }
             sketch = `./images/Primarch${i}.jpg`;
