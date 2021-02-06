@@ -1,0 +1,39 @@
+.primarch-container {
+    height: auto;
+    width: auto;
+    border: 1px solid green;
+    text-align: center;
+}
+
+.primarch-card {
+    display: inline-block;
+    height: 300px;
+    width: 250px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 10px;
+    background-color: goldenrod;
+    transition: height 1s,width 1s;
+}
+
+.sketch {
+    position: relative;
+    height: 83%;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+
+.name {
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.primarch-card:hover {
+    box-shadow: 10px 10px 5px goldenrod;
+    background-color: gold;
+    height: 325px;
+    width: 275px;
+
+}
+

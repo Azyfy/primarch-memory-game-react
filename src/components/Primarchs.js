@@ -113,7 +113,7 @@ const Primarchs = () => {
     addPrimarchs();
 
     return (
-        <div className="primarch-card">
+        <div className="primarch-container">
         {console.log("render")}
         {console.log(primarchs)}
         {primarchs.map( (primarch) => {
