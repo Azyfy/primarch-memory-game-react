@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
+import uniqid from "uniqid";
 
 const Primarchs = () => {
     let primarchArray = [];
     const [primarchs, setPrimarchs] = useState(primarchArray);
 
-    const primarchFactory = (name, legion, sketch, i) => {
-        let key = i;
-        return { name, legion, sketch, key }
+    const primarchFactory = (name, legion, sketch) => {
+        return { name, legion, sketch }
     };
 
     function addPrimarchs(){ 
@@ -36,9 +36,17 @@ const Primarchs = () => {
                         break;
                 }
                 sketch = `./images/Primarch${i}.png`;
-                primarch = primarchFactory(name, legion, sketch, i);
+                primarch = primarchFactory(name, legion, sketch);
                 primarchArray.push(primarch);
             }
+        else if(i==13) {
+            name = "Magnus the Red";
+            legion = "XV";
+            sketch = `./images/Primarch${i}.jpeg`;
+            primarch = primarchFactory(name, legion, sketch);
+            primarchArray.push(primarch);
+
+        }
         else {
             switch (i) {
                 case 1:
@@ -77,10 +85,6 @@ const Primarchs = () => {
                     name = "Roboute Guilliman";
                     legion = "XIII";
                     break;
-                case 13:
-                    name = "Magnus the Red";
-                    legion = "XV";
-                    break;
                 case 15:
                     name = "Lorgar";
                     legion = "XVII";
@@ -99,7 +103,7 @@ const Primarchs = () => {
                     break;
             }
             sketch = `./images/Primarch${i}.jpg`;
-            primarch = primarchFactory(name, legion, sketch, i);
+            primarch = primarchFactory(name, legion, sketch);
             primarchArray.push(primarch);
                 
         }
@@ -108,14 +112,17 @@ const Primarchs = () => {
     addPrimarchs();
 
     return (
-        <div>
-        <h1> Primarchs </h1>
+        <div className="primarch-card">
         {console.log("render")}
         {console.log(primarchs)}
-
         {primarchs.map( (primarch) => {
-
-            return <img key={primarch.key} src={primarch.sketch} />;
+            return (
+                <div key={uniqid()} className="primarch-card">
+                <img className="sketch" key={uniqid()} src={primarch.sketch} />
+                <p key={uniqid()} className="name"> {primarch.name} </p>
+                <p key={uniqid()} className="legion"> {primarch.legion} </p>
+            </div> 
+            )
         })
 
 }
