@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import uniqid from "uniqid";
+import "../styles/Primarch.css";
 
 const Primarchs = () => {
     let primarchArray = [];
@@ -124,8 +125,7 @@ const Primarchs = () => {
             </div> 
             )
         })
-
-}
+        }
 
         </div>
 
