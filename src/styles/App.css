@@ -22,3 +22,26 @@ h1 {
     font-size: xx-large;
     margin: 5px;
 }
+
+.tooltip {
+    display: inline;
+    color: white;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    top: 19%;
+    left: 33%;
+    padding: 10px;
+    z-index: 2;
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 10px;
+
+
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
