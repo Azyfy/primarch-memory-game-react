@@ -175,7 +175,6 @@ const Primarchs = () => {
                 <img className="sketch" key={uniqid()} id={primarch.name} src={primarch.sketch} />
                 <p key={uniqid()} id={primarch.name} className="name"> {primarch.name} </p>
                 <p key={uniqid()} id={primarch.name} className="legion"> {primarch.legion} </p>
-                {/* note for me: check the click event and its return values */}
             </div> 
             )
         })
