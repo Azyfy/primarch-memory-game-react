@@ -37,3 +37,9 @@
 
 }
 
+.purity-seal {
+    position: fixed;
+    z-index: 10;
+    left: 5px;
+
+}

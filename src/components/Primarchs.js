@@ -8,6 +8,7 @@ const Primarchs = () => {
     const [score, setScore] = useState(0);
     const [highScore, setHighScore] = useState(0);
     const [myPicks, setMyPicks] = useState([]);
+    const [puritySeal, setPuritySeal] = useState(false);
 
     const primarchFactory = (name, legion, sketch) => {
         return { name, legion, sketch }
@@ -124,6 +125,7 @@ const Primarchs = () => {
             if(primarch == name) {
                 gameOver = true;
                 console.log("Game Over")
+                alert("To admit defeat is to blaspheme against the Emperor.")
                 if(highScore < score) {setHighScore(score)}
                 setScore(0);
                 setMyPicks([]);
@@ -149,12 +151,13 @@ const Primarchs = () => {
     }
 
     useEffect(() => {
-        if (score ==18 ) {
+        if (score ==3 ) {
             console.log("You win")
 
             setHighScore(score);
             setScore(0);
             setMyPicks([]);
+            setPuritySeal(true);
 
         }
     }, [score] );
@@ -163,6 +166,9 @@ const Primarchs = () => {
         <div className="primarch-container">
         <p> {score} </p>
         <p> {highScore} </p>
+        {(puritySeal)? (
+            <img className="purity-seal" src="./images/PuritySeal.png" />
+        ) : (null)  }
         {primarchs.map( (primarch) => {
             return (
                 <div key={uniqid()} className="primarch-card" id={primarch.name} onClick={playGame}>
