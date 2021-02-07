@@ -1,0 +1,9 @@
+.App {
+    background-image: url("Imperium.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+
+}
