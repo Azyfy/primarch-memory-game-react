@@ -1,7 +1,6 @@
 .primarch-container {
     height: auto;
     width: auto;
-    border: 1px solid green;
     text-align: center;
 }
 
@@ -35,6 +34,16 @@
     height: 325px;
     width: 275px;
 
+}
+
+.score-board {
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .purity-seal {

@@ -124,7 +124,6 @@ const Primarchs = () => {
         myPicks.map( primarch => {
             if(primarch == name) {
                 gameOver = true;
-                console.log("Game Over")
                 alert("To admit defeat \n is to blaspheme against the Emperor.")
                 if(highScore < score) {setHighScore(score)}
                 setScore(0);
@@ -165,8 +164,8 @@ const Primarchs = () => {
 
     return (
         <div className="primarch-container">
-        <p> {score} </p>
-        <p> {highScore} </p>
+        <p className="score-board"> <span>Score</span> {score}   &emsp;   <span>Highscore</span> {highScore} </p>
+
         {(puritySeal)? (
             <img className="purity-seal" src="./images/PuritySeal.png" />
         ) : (null)  }
