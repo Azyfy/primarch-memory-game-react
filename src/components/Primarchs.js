@@ -125,7 +125,7 @@ const Primarchs = () => {
             if(primarch == name) {
                 gameOver = true;
                 console.log("Game Over")
-                alert("To admit defeat is to blaspheme against the Emperor.")
+                alert("To admit defeat \n is to blaspheme against the Emperor.")
                 if(highScore < score) {setHighScore(score)}
                 setScore(0);
                 setMyPicks([]);
@@ -151,13 +151,14 @@ const Primarchs = () => {
     }
 
     useEffect(() => {
-        if (score ==3 ) {
-            console.log("You win")
+        if (score == 18 ) {
 
             setHighScore(score);
             setScore(0);
             setMyPicks([]);
             setPuritySeal(true);
+
+            alert("The Emperor protects.")
 
         }
     }, [score] );
