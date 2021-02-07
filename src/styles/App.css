@@ -31,7 +31,7 @@ h1 {
 .tooltiptext {
     visibility: hidden;
     position: absolute;
-    top: 19%;
+    top: 75px;
     left: 33%;
     padding: 10px;
     z-index: 2;
