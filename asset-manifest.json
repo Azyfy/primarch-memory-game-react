@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Azzryel/primarch-memory-game-react/static/css/main.1563928d.chunk.css",
+    "main.js": "/Azzryel/primarch-memory-game-react/static/js/main.e7a49476.chunk.js",
+    "main.js.map": "/Azzryel/primarch-memory-game-react/static/js/main.e7a49476.chunk.js.map",
+    "runtime-main.js": "/Azzryel/primarch-memory-game-react/static/js/runtime-main.0fb3ba57.js",
+    "runtime-main.js.map": "/Azzryel/primarch-memory-game-react/static/js/runtime-main.0fb3ba57.js.map",
+    "static/js/2.2a26a7fd.chunk.js": "/Azzryel/primarch-memory-game-react/static/js/2.2a26a7fd.chunk.js",
+    "static/js/2.2a26a7fd.chunk.js.map": "/Azzryel/primarch-memory-game-react/static/js/2.2a26a7fd.chunk.js.map",
+    "index.html": "/Azzryel/primarch-memory-game-react/index.html",
+    "static/css/main.1563928d.chunk.css.map": "/Azzryel/primarch-memory-game-react/static/css/main.1563928d.chunk.css.map",
+    "static/js/2.2a26a7fd.chunk.js.LICENSE.txt": "/Azzryel/primarch-memory-game-react/static/js/2.2a26a7fd.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Azzryel/primarch-memory-game-react/static/media/Imperium.c22f08b5.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0fb3ba57.js",
+    "static/js/2.2a26a7fd.chunk.js",
+    "static/css/main.1563928d.chunk.css",
+    "static/js/main.e7a49476.chunk.js"
+  ]
+}
