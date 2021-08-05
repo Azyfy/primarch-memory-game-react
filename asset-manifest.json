@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/primarch-memory-game-react/static/css/main.be224dcb.chunk.css",
-    "main.js": "/primarch-memory-game-react/static/js/main.e7a49476.chunk.js",
-    "main.js.map": "/primarch-memory-game-react/static/js/main.e7a49476.chunk.js.map",
+    "main.js": "/primarch-memory-game-react/static/js/main.50ae3dc5.chunk.js",
+    "main.js.map": "/primarch-memory-game-react/static/js/main.50ae3dc5.chunk.js.map",
     "runtime-main.js": "/primarch-memory-game-react/static/js/runtime-main.27ecd30a.js",
     "runtime-main.js.map": "/primarch-memory-game-react/static/js/runtime-main.27ecd30a.js.map",
-    "static/js/2.2a26a7fd.chunk.js": "/primarch-memory-game-react/static/js/2.2a26a7fd.chunk.js",
-    "static/js/2.2a26a7fd.chunk.js.map": "/primarch-memory-game-react/static/js/2.2a26a7fd.chunk.js.map",
+    "static/js/2.e591131d.chunk.js": "/primarch-memory-game-react/static/js/2.e591131d.chunk.js",
+    "static/js/2.e591131d.chunk.js.map": "/primarch-memory-game-react/static/js/2.e591131d.chunk.js.map",
     "index.html": "/primarch-memory-game-react/index.html",
     "static/css/main.be224dcb.chunk.css.map": "/primarch-memory-game-react/static/css/main.be224dcb.chunk.css.map",
-    "static/js/2.2a26a7fd.chunk.js.LICENSE.txt": "/primarch-memory-game-react/static/js/2.2a26a7fd.chunk.js.LICENSE.txt",
+    "static/js/2.e591131d.chunk.js.LICENSE.txt": "/primarch-memory-game-react/static/js/2.e591131d.chunk.js.LICENSE.txt",
     "static/media/App.css": "/primarch-memory-game-react/static/media/Imperium.c22f08b5.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.27ecd30a.js",
-    "static/js/2.2a26a7fd.chunk.js",
+    "static/js/2.e591131d.chunk.js",
     "static/css/main.be224dcb.chunk.css",
-    "static/js/main.e7a49476.chunk.js"
+    "static/js/main.50ae3dc5.chunk.js"
   ]
 }
